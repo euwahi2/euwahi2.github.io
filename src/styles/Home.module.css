@@ -1,121 +1,105 @@
 .container {
+  background-color: #121212;
+  background-image: radial-gradient(#2c2c2c 1px, transparent 1px);
+  background-size: 24px 24px;
+  font-family: Arial, sans-serif;
+  color: white;
   min-height: 100vh;
-  padding: 0 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.main {
-  padding: 2rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 800px;
-  width: 100%;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 2rem;
-  text-align: center;
-}
-
-.description {
-  text-align: center;
-  margin: 1rem 0 2rem;
-}
-
-.logo {
-  height: 100px;
-  margin-bottom: 1rem;
+  padding: 20px;
 }
 
 .card {
-  background: #f9f9f9;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid #a3005b;
   border-radius: 10px;
-  padding: 1.5rem;
-  margin: 1rem 0;
-  width: 100%;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #1a1a1a;
+  text-align: center;
 }
 
-.form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+.profileIcon {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.siteLink {
+  display: block;
+  text-align: center;
+  margin: 0 auto 20px;
+  font-size: 14px;
+  color: #bbbbbb;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.siteLink:hover {
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 .formGroup {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  margin-bottom: 15px;
+  text-align: left;
 }
 
 .formGroup label {
-  font-weight: 600;
+  display: block;
+  margin-bottom: 5px;
 }
 
 .formGroup input,
 .formGroup select,
 .formGroup textarea {
-  padding: 0.5rem;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font-size: 1rem;
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  background-color: #2a2a2a;
+  color: white;
+}
+
+.formGroup textarea {
+  min-height: 80px;
+  resize: vertical;
 }
 
 .donateButton {
-  background: #ff6b6b;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #a3005b;
   color: white;
   border: none;
-  padding: 0.75rem;
-  border-radius: 4px;
-  font-size: 1rem;
+  border-radius: 5px;
+  font-weight: bold;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: transform 0.3s;
+  width: 100%;
 }
 
 .donateButton:hover {
-  background: #ff5252;
-}
-
-.donateButton:disabled {
-  background: #ccc;
-  cursor: not-allowed;
+  transform: scale(1.05);
 }
 
 .donorsList {
-  list-style: none;
-  padding: 0;
-  width: 100%;
+  text-align: left;
 }
 
 .donorItem {
   display: flex;
   justify-content: space-between;
-  padding: 0.75rem 0;
-  border-bottom: 1px solid #eee;
+  padding: 8px 0;
+  border-bottom: 1px solid #333;
 }
 
 .donorName {
-  font-weight: 500;
+  color: #ff66cc;
 }
 
-.donorAmount {
-  color: #ff6b6b;
+.donorValue {
+  color: #00ff00;
   font-weight: bold;
-}
-
-.emptyRanking {
-  text-align: center;
-  padding: 1rem 0;
-}
-
-.callToAction {
-  color: #ff6b6b;
-  font-weight: bold;
-  margin-top: 0.5rem;
 }
