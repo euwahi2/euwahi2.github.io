@@ -1,27 +1,24 @@
-import Head from 'next/head';
-import Link from 'next/link';
-import styles from '../styles/Home.module.css';
+import Head from 'next/head'
+import styles from '../styles/Home.module.css'
+import Link from 'next/link'
 
 export default function Thanks() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Obrigado pela doação | Laços Profanos</title>
+        <title>Obrigado por doar! | Laços Profanos</title>
+        <link rel="icon" href="https://i.imgur.com/mgxXSto.png" type="image/png" />
       </Head>
 
-      <main className={styles.main}>
-        <img 
-          src="https://i.imgur.com/SEU-LOGO.png" 
-          alt="Laços Profanos" 
-          className={styles.logo}
-        />
-        <h1 className={styles.title}>Obrigado pela sua doação!</h1>
-        <p className={styles.description}>Sua contribuição faz toda a diferença para nosso trabalho.</p>
+      <div className={styles.card}>
+        <img className={styles.profileIcon} src="https://i.imgur.com/mgxXSto.png" alt="Logo Laços Profanos" />
+        <h2>Obrigado pela sua doação! 💜</h2>
+        <p>Sua contribuição ajuda a manter o projeto Laços Profanos.</p>
         
         <Link href="/" className={styles.donateButton}>
-          Voltar à página inicial
+          Voltar para a página inicial
         </Link>
-      </main>
+      </div>
     </div>
-  );
+  )
 }
