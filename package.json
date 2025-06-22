@@ -1,1 +1,2 @@
+npm install @supabase/supabase-js mercadopago
 npm install @supabase/supabase-js mercadopago next react react-dom
