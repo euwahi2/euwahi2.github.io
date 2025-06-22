@@ -1,2 +1,6 @@
 npm install @supabase/supabase-js mercadopago
 npm install @supabase/supabase-js mercadopago next react react-dom
+"scripts": {
+  "validate:vercel": "node -e \"require('./vercel.json')\" && echo '✅ vercel.json válido'"
+}
+npm run validate:vercel
